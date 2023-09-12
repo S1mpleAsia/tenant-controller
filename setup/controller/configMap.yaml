@@ -1,0 +1,30 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: app-template-config
+data:
+  # your custom resource groupname
+  RESOURCE_GROUP: "myapp.domain.com"
+
+  # your custom resource name (plural)
+  RESOURCE_NAME: "apptemplates"
+
+  # default api version of your custom resource
+  API_VERSION: "v1"
+
+  # default docker container registry
+  DOCKER_REGISTRY: "drayfocus"
+
+  # default custom resource namespace
+  RESOURCE_NAMESPACE: "default"
+
+  # git repo url for template config files
+  CONFIG_REPO_URL: "https://github.com/Doctordrayfocus/AppTemplateConfigs.git"
+
+  # repo sync interval (in seconds)
+  SYNC_INTERVAL: "3"
+
+
+
+
+  
